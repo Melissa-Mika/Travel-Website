@@ -1,0 +1,40 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: tan;
+}
+
+nav {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px rgb(67, 16, 16) solid;
+  background-color: tan;
+  height: 65vh;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+  border: 3px rgb(67, 16, 16) solid;
+}
+
+h1 {
+  background-color: rgb(180, 133, 133);
+}
+
+
+.footer {
+
+}
+
+
+
