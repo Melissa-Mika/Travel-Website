@@ -8,6 +8,12 @@ body {
   background-color: tan;
 }
 
+.logo {
+  border: 1px brown solid;
+  width: 75px;
+  height: 75px;
+}
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -40,7 +46,6 @@ a:hover {
   color: white;
 }
 
-
 .container {
   display: flex;
   flex-direction: row;
@@ -54,6 +59,14 @@ a:hover {
 
 }
 
+section {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  flex: 200px;
+  padding: 10px;
+}
+
 h1 {
   background-color: rgb(192, 156, 110);
   font-family: 'Caveat', cursive;
@@ -62,7 +75,7 @@ h1 {
   text-shadow: 3px 3px black;
   text-align: center;
   margin-bottom: 10px;
-  margin-top: 15px;
+  margin-top: 0px;
 }
 
 h2 {
@@ -90,7 +103,7 @@ img {
   height: 250px;
   width: 250px;
   margin: auto;
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 .cowboy,
@@ -99,26 +112,15 @@ img {
 .wrangler {
   border: 3px maroon solid;
   min-height: 100%;
-  flex: 1;
 }
 
 P {
   font-size: 18px;
   padding: 10px;
-
 }
 
 .wrangler {
   min-height: 100%;
-}
-
-section {
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 100vh;
-  flex: 200px;
-  padding: 10px;
-  flex: 1;
 }
 
 .footer1,
@@ -127,9 +129,19 @@ section {
   margin-bottom: 0px;
   padding: 0px;
   text-align: center;
+  font-family: "caveat", cursive;
 }
 
 @media screen and (min-width: 530px ) {
+  .container {
+    flex-direction: column;
+  }
 
 
+}
+
+@media screen and (min-width: 942px) {
+  .container {
+    flex-direction: row;
+  }
 }
